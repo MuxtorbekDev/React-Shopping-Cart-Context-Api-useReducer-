@@ -31,11 +31,11 @@ const Cart = () => {
     <>
       <div className="home">
         <div className="back">
-          <Button onClick={handleClick}>
+          <Button onClick={handleClick} variant="outline-primary">
             <IoIosArrowBack /> Back
           </Button>
         </div>
-        <div className="productContainer">
+        <div className="productContainer producCart">
           <ListGroup>
             {cart.map((p) => (
               <ListGroup.Item key={p.id}>

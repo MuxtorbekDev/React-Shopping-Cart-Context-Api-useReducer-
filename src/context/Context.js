@@ -1,13 +1,13 @@
 import React, { useContext, useReducer } from "react";
 import { createContext } from "react";
-// import faker from "faker";
-import { faker } from "https://cdn.skypack.dev/@faker-js/faker";
+// import { faker } from "https://cdn.skypack.dev/@faker-js/faker";
+import { faker } from "@faker-js/faker";
 import { cartReducer, productReducer } from "./Reducers";
 const Cart = createContext();
 faker.seed(99);
 
 const Context = ({ children }) => {
-  const products = [...Array(20)].map(() => ({
+  const products = [...Array(40)].map(() => ({
     id: faker.datatype.uuid(),
     name: faker.commerce.productName(),
     price: faker.commerce.price(),

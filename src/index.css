@@ -86,8 +86,13 @@ a {
 }
 .back {
   position: fixed;
-  top: 100px;
+  top: 95px;
   left: 30px;
+  z-index: 99;
+}
+
+.producCart {
+  margin-top: 60px
 }
 
 
