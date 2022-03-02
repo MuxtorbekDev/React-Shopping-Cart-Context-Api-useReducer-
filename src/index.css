@@ -1,13 +1,125 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+a {
+  text-decoration: none !important;
+  color: inherit !important;
+}
+.home {
+  display: flex;
+  margin-top: 70px;
+
+}
+.productContainer {
+  display: flex;
+  width: 78%;
+  padding: 20px;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.filters {
+  position: fixed;
+  top: 90px;
+  left: 10px;
+  display: flex;
+  flex-direction: column;
+  background-color: #343a40;
+  padding: 20px;
+  height: 500px;
+  border-radius: 10px;
+}
+.filters2{
+  position: fixed;
+  top: 90px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: #343a40;
+  padding: 20px;
+  height: 500px;
+  border-radius: 10px;
+  right: 10px;
+  color: #fff;
+  width: 22%;
+}
+.filterContainer2 {
+  color: #fff;
+  width: 22%;
+  margin: 10px;
+  height: 82vh;
+}
+
+.filterContainer {
+
+  color: #fff;
+  width: 20%;
+  margin: 10px;
+  height: 82vh;
+}
+.filters > span {
+  padding-bottom: 20px;
+}
+
+.products {
+  width: 30%;
+  margin: 10px;
+}
+.cartItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 20px;
+  margin-bottom: 20px;
+}
+.cartItemImg {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+}
+.cartItemDetail {
+  display: flex;
+  flex: 1;
+  padding: 0 20px;
+  flex-direction: column;
+}
+.back {
+  position: fixed;
+  top: 100px;
+  left: 30px;
+}
+
+
+@media (max-width: 771px) {
+  .filters {
+    width: 40%;
+    padding: 10px;
+    margin: 5px;
+  }
+  .filterContainer {
+    width: 40%;
+
+  }
+  .filters > span {
+    font-size: 10px;
+
+  }
+  .title {
+    font-size: 18px !important;
+  }
+  .productContainer {
+    width: 58%;
+    padding: 0;
+  }
+
+  .search {
+    display: none !important;
+  }
+  .products {
+    width: 100%
+  }
+  .filters2 {
+    width: 30%
+  }
 }
